@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="ejerciciocv.css">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,31 +11,36 @@
 
 <body>
     <h1>CURRICULUM VITAE NOMBRE Y APELLIDO</h1>
-    <img src="IMG/imagen_cv.jpg" alt="imagen cv" />
+    <div>
+        <img src="IMG/imagen_cv.jpg" alt="imagen cv" />
+    </div>
     <H2>Edad </H2>
     <h2>Domicilio</h2>
-    <h3>Series que me gustan</h3>
-    <h4>
-        <ul>
-            <li>Peaky Blinders</li>
-            <li>El Marginal</li>
-            <li>GARRAS</li>
-            <li>La Casa de Papel</li>
-            <li>Breaking Bad</li>
-            <li>Malverde</li>
-            <li>Intimidad</li>
+    <div> 
+     <h3>Series que me gustan</h3>
+        <h4>
+            <ul>
+                <li>Peaky Blinders</li>
+                <li>El Marginal</li>
+                <li>GARRAS</li>
+                <li>La Casa de Papel</li>
+                <li>Breaking Bad</li>
+                <li>Malverde</li>
+                <li>Intimidad</li>
 
-    </h4>
-    <h3>Peliculas que me gustan</h3>
-    <h4>
-        <ul>
-            <li>El robo del siglo</li>
-            <li>Corazon Loco</li>
-            <li>El Irlandés</li>
-            <li>Bohemian Rhapsody</li>
-            <li>La familia perfecta</li>
+        </h4>
+    </div>
+    <div>  <h3>Peliculas que me gustan</h3>
+        <h4>
+            <ul>
+                <li>El robo del siglo</li>
+                <li>Corazon Loco</li>
+                <li>El Irlandés</li>
+                <li>Bohemian Rhapsody</li>
+                <li>La familia perfecta</li>
 
-    </h4>
+        </h4>
+    </div>
     <h3>Perfil</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse animi magni, quos laborum quis at modi? Rerum
         reiciendis nulla nihil pariatur suscipit, debitis quis dolor minus non libero mollitia earum!</p>
@@ -47,20 +53,32 @@
     <h5>Si queres contactarme podes completar el siguente <a href="https://www.google.com.ar"
             target="_blank">formulario</a>
     </h5>
-    <audio src="Nuevo Dia.mp3" controls></audio>
-    <form action="" method="">
-        <p>
-            <label for="">Nombre:</label>
-            <input type="text" name="nombre" />
-        </p>
-        <p>
-            <input type="text" name="Apellido" placeholder="Apellido" />
-        </p>
-        <p>
+
+
+
+    <audio controls>
+        <source src="Nuevo Dia.mp3" type="audio/mp3" </audio>
+    </audio>
+
+    <h3>Formulario</h3>
+    <div> 
+    <form action="">
+        <div> 
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" />
+        </div>
+    <br>
+    
+    <div class="destacado">
+    <input type="text" name="Apellido" placeholder="Apellido"/> 
+    </div>
+        <br>
+        <div>
             <label for="pass">Contraseña</label>
             <input type="password" name="pass" />
-        </p>
-        <p>
+        </div>
+        <br>
+        <div>
             <label for="Sexo">Sexo</label>
         <ul>
             <li>
@@ -75,11 +93,13 @@
 
 
         </ul>
-        </p>
-        <p>
-        <ul>
+    </div>
+    <div id="hobbies"> 
+        <p >
+        
             <label>Hobbies</label>
-        </ul>
+        </p>
+        <ul>
         <li>
             <input type="checkbox" name="Hobbies[]" value="Bailar" id="Bailar" />
             <label for="Bailar">Bailar</label>
@@ -102,26 +122,29 @@
             <label for="Nadar">Nadar</label>
         </li>
         </ul>
-        </p>
-        <p>
+    </div>
+        <div>
             <label for="Titulo">Titulo</label>
             <select name="Titulo">
                 <option value="Primario">Primario</option>
                 <option value="Secundario">Secundario</option>
                 <option value="Terciario">Terciario</option>
                 <option value="Universitario">Universitario</option>
-                </section>
-        </p>
-        <p>
-            <label for="Comentarios"> Comentarios</label>
-            <textarea name="Comentarios">Comentarios</textarea>
-        </p>
-        <p>
+            </select>
+        </div>
+        <br>
+        
+         <div>
+            <!-- <label for="Comentarios"> Comentarios</label> -->
+           <textarea name="Comentarios">Comentarios</textarea>
+        </div>
+        <br>
+        <div>
             <input type="submit" value="Enviar" />
             <input type="Reset" value="Borrar" />
-        </p>
-    </form>
-
+        </div>
+        </form>
+        </div>
 
 
 </body>

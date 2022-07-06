@@ -1,0 +1,30 @@
+h1{
+    color: green;
+    font-family: arial;
+    font-size: 35px;
+text-align: center;
+background-color:greenyellow;
+}
+
+h2{
+    color: grey;
+    font-family: 'Times New Roman';
+    font-size: 30px;
+}
+p{
+    color: blue;
+    column-count: 3;
+}
+h3{
+    font-family: arial;
+    font-size: 30px;
+}
+h5{
+    font-family: arial;
+    font-size: 30px;
+}
+#hobbies{
+    background-color:greenyellow;
+    
+    
+}
